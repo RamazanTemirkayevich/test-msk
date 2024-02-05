@@ -1,4 +1,115 @@
 //BEGIN header
-header.header
-  p Hello from ./partials/_header
+<header class="header section">
+  <div class="container">
+    <div class="header-wrap">
+      <div class="header-wrap__logo">
+        <img src="./img/logo.svg" alt="">
+      </div>
+      <div class="header-wrap__action">
+        <ul class="header-wrap__list">
+          <li class="header-wrap__list-item">
+            <a href="/">
+              <img src="./icons/phone.svg" alt="">
+            </a>
+          </li>
+          <li class="header-wrap__list-item">
+            <a href="/">
+              <img src="./icons/cart.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="header-wrap__menu">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav section">
+  <div class="container">
+    <div class="nav-wrap">
+      <div class="nav-wrap__upper">
+        <div class="nav-wrap__upper-search">
+          <input id="input" type="text" placeholder="Поиск">
+          +icon('search-input')
+        </div>
+        <ul class="nav-wrap__upper-list">
+          <li class="nav-wrap__upper-item">
+            <a href="/">
+              +icon('user')
+              <span>Личный кабинет</span>
+            </a>
+          </li>
+          <li class="nav-wrap__upper-item switch">
+            <a href="/">
+              +icon('web')
+              <span class="selected">eng</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav-wrap__menu">
+        <li class="nav-wrap__menu-item">
+          <a href="/">компания</a>
+        </li>
+        <li class="nav-wrap__menu-item parent-sub">
+          <a href="#">продукция</a>
+          <img src="./icons/arrow-sm.svg" class="arrow-icon" alt="">
+          <ul class="nav-wrap__menu-sub__list">
+            <li class="nav-wrap__menu-sub__item">
+              <a href="/">Твердомеры</a>
+            </li>
+            <li class="nav-wrap__menu-sub__item">
+              <a href="/">Меры твердости</a>
+            </li>
+            <li class="nav-wrap__menu-sub__item">
+              <a href="/">Подобрать твердомер</a>
+            </li>
+            <li class="nav-wrap__menu-sub__item">
+              <a href="/">Подобрать меры твердости</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-wrap__menu-item">
+          <a href="/">Дилеры</a>
+        </li>
+        <li class="nav-wrap__menu-item">
+          <a href="/">инфоцентр</a>
+        </li>
+        <li class="nav-wrap__menu-item">
+          <a href="/">проверка подлинности</a>
+        </li>
+        <li class="nav-wrap__menu-item">
+          <a href="/">контакты</a>
+        </li>
+      </ul>
+      <div class="nav-wrap__social">
+        <a href="tel:+88002227526" class="nav-wrap__social-tel">8 (800) 222-75-26</a>
+        <ul class="nav-wrap__social-list">
+          <li class="nav-wrap__social-item">
+            <a href="/">
+              <img src="./icons/telegram.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-wrap__social-item">
+            <a href="/">
+              <img src="./icons/whatsapp.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-wrap__social-item">
+            <a href="/">
+              <img src="./icons/sms.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-wrap__social-item">
+            <a href="/">
+              <img src="./icons/message.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 //END header

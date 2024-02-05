@@ -1,0 +1,68 @@
+body {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 180%;
+    font-family: $font-main;
+    color: var(--main-menu-font);
+    background-color: var(--main-dark);
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.lock .header--scroll {
+    background-color: unset;
+    backdrop-filter: unset;
+}
+
+main {
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.lock main {
+    transform: translate3d(280px, 0, 0);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.container {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: unset;
+}
+
+.section {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &--filled {
+        background-color: var(--main-menu-font);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.padd {
+    &--t {
+        padding-top: 180px;
+    }
+
+    &--tb-small {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    &--tb-medium {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    &--tb-xs {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
