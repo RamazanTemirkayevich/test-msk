@@ -2,13 +2,23 @@ import sayHello from './lib/sayHello';
 
 sayHello();
 
-$(document).on('click', '.parent-sub', function () {
-    const subMenu = document.querySelector('.nav-wrap__menu-sub__list');
-    const arrow = document.querySelector('.arrow-icon')
-
-    subMenu.classList.toggle('active')
-    arrow.classList.toggle('active')
-})
+if (window.innerWidth < 1360) {
+    $(document).on('click', '.parent-sub', function () {
+        const subMenu = document.querySelector('.nav-wrap__menu-sub__list');
+        const arrow = document.querySelector('.arrow-icon')
+    
+        subMenu.classList.toggle('active')
+        arrow.classList.toggle('active')
+    })
+} else {
+    $(document).off('click', '.parent-sub', function () {
+        const subMenu = document.querySelector('.nav-wrap__menu-sub__list');
+        const arrow = document.querySelector('.arrow-icon')
+    
+        subMenu.classList.remove('active')
+        arrow.classList.remove('active')
+    })
+}
 
 function burgerMenu() {
     const burger = document.querySelector(".header-wrap__menu");
@@ -31,5 +41,14 @@ $(window).scroll(function(){
         $('.header').removeClass('header--scroll');
     }
 });
+
+const searchHandle = document.querySelectorAll('.search, .search-icon')
+const searchInput = document.querySelector('.nav-wrap__upper-search')
+
+searchHandle.forEach((e) => {
+    e.addEventListener('click', () => {
+        searchInput.classList.toggle('active')
+    })
+})
 
 burgerMenu();

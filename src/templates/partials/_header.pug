@@ -1,13 +1,18 @@
 //BEGIN header
 <header class="header section">
-  <div class="container">
+  <div class="container--header">
     <div class="header-wrap">
       <div class="header-wrap__logo">
         <img src="./img/logo.svg" alt="">
       </div>
       <div class="header-wrap__action">
         <ul class="header-wrap__list">
-          <li class="header-wrap__list-item">
+          <li class="header-wrap__list-item search">
+            <a href="#">
+              <img src="./icons/search.svg" alt="">
+            </a>
+          </li>
+          <li class="header-wrap__list-item phone">
             <a href="/">
               <img src="./icons/phone.svg" alt="">
             </a>
@@ -15,6 +20,11 @@
           <li class="header-wrap__list-item">
             <a href="/">
               <img src="./icons/cart.svg" alt="">
+            </a>
+          </li>
+          <li class="header-wrap__list-item user">
+            <a href="/">
+              <img src="./icons/user.svg" alt="">
             </a>
           </li>
         </ul>
@@ -32,7 +42,7 @@
       <div class="nav-wrap__upper">
         <div class="nav-wrap__upper-search">
           <input id="input" type="text" placeholder="Поиск">
-          +icon('search-input')
+          +icon('search-input', 'search-icon')
         </div>
         <ul class="nav-wrap__upper-list">
           <li class="nav-wrap__upper-item">

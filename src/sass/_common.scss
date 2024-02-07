@@ -32,12 +32,24 @@ main {
     padding: unset;
 }
 
+.container--header {
+    max-width: $max-width-lg;
+    margin-left: auto;
+    margin-right: auto;
+    padding: unset;
+}
+
 .section {
     padding-left: 16px;
     padding-right: 16px;
 
     &--filled {
         background-color: var(--main-menu-font);
+    }
+
+    @include rmin($desktop-lg) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
